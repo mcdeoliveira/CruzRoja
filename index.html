@@ -21,7 +21,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Material Design Lite</title>
+    <title>Cruz Roja</title>
 
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
@@ -46,7 +46,9 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="bower_components/material-design-lite/material.min.css">
     <link rel="stylesheet" href="styles.css">
-    
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="./javascripts/maps.js"></script>
 
   </head>
   <body>
@@ -77,10 +79,10 @@
         </div>
       </header>
       <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
-        <header class="demo-drawer-header">
-          <img src="images/user.jpg" class="demo-avatar">
+        <header class="demo-drawer-header" style="background: url(./images/RedCross.jpg); background-size:cover;">
+          <img src="images/carlos.png" class="demo-avatar">
           <div class="demo-avatar-dropdown">
-            <span>hello@email.com</span>
+            <span>Carlos@CruzRoja.com</span>
             <div class="mdl-layout-spacer"></div>
             <button id="accbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
               <i class="material-icons">arrow_drop_down</i>
@@ -97,15 +99,17 @@
 
           </nav-item>
           <nav-item>
-          <a class="mdl-navigation__link" href="#/todo"><i class="mdl-color-text--blue-grey-400 material-icons">done_all</i>Todo</a>
+          <a class="mdl-navigation__link" href="#/todo"><i class="mdl-color-text--blue-grey-400 material-icons">content_paste</i>Patient</a>
+            <sub-nav>
+              <sub-nav-item><a class="mdl-navigation__link" href="#/elements/buttons">Location</a></sub-nav-item>
+              <sub-nav-item><a class="mdl-navigation__link" href="#/elements/input">Form</a></sub-nav-item>
+            </sub-nav>
+
           </nav-item>
           <nav-item>
-          <a class="mdl-navigation__link"><i class="mdl-color-text--blue-grey-400 material-icons">settings_input_component</i>Elements</a>
+          <a class="mdl-navigation__link"><i class="mdl-color-text--blue-grey-400 material-icons">settings_input_component</i>Resources</a>
 
-            <sub-nav>
-              <sub-nav-item><a class="mdl-navigation__link" href="#/elements/buttons">Buttons</a></sub-nav-item>
-              <sub-nav-item><a class="mdl-navigation__link" href="#/elements/input">Input</a></sub-nav-item>
-            </sub-nav>
+
           </nav-item>
          
           <nav-item>
@@ -113,7 +117,7 @@
           </nav-item>
           <!-- Coming soon -->
           <nav-item>
-          <a class="mdl-navigation__link"><i class="mdl-color-text--blue-grey-400 material-icons">layers</i>Levels</a>
+          <a class="mdl-navigation__link"><i class="mdl-color-text--blue-grey-400 material-icons">layers</i>Maps</a>
             <sub-nav>
               <sub-nav-item><a class="mdl-navigation__link">Level 1a</a></sub-nav-item>
               <sub-nav-item><a class="mdl-navigation__link" href="">Level 1b</a></sub-nav-item>
